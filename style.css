@@ -1,0 +1,68 @@
+/* font for site */
+@font-face {
+  src: url(Futura.ttc);
+  font-family: 'Futura Medium';
+}
+
+/*nav*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+ul {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: pink;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+/* Color on hover */
+li a:hover {
+  background-color: white;
+}
+
+/* index */
+body {
+  background-color: #111;
+  margin: 0;
+}
+
+svg{
+    width: 800px;
+    fill: none;
+    stroke: pink;
+    stroke-width: 4;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: draw 4s forwards;
+}
+
+@keyframes draw{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+
+div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
