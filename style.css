@@ -1,7 +1,7 @@
 /* font for site */
 @font-face {
-  src: url(Futura.ttc);
-  font-family: 'Futura Medium';
+  src: url();
+  font-family: "Lato", sans-serif;
 }
 
 /*NAVBAR*/
@@ -18,7 +18,7 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #222;
+  background-color: #b7b7b7;
 font-family: sans-serif;
 }
 
@@ -26,15 +26,16 @@ ul.topnav li {float: left;}
 
 ul.topnav li a {
   display: block;
-  color: ghostwhite;
+  color: #616161;
   text-align: center;
   padding: 20px 30px;
   text-decoration: none;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a:hover:not(.active) {background-color: #ededed;}
 
 ul.topnav li.right {float: right;}
+
 
 /*Small screens - mobile*/
 @media screen and (max-width: 600px) {
@@ -42,11 +43,11 @@ ul.topnav li.right {float: right;}
   ul.topnav li {float: none;}
 }
 
-
-/* index */
+/*HOME*/
 body {
-  background-color: ghostwhite;
+  background-color: #ededed;
   margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
 /* SVG?
@@ -75,3 +76,28 @@ div{
   min-height: 100vh;
 }
 */
+
+/*ABOUT*/
+
+h3 {
+    text-align: center;
+}
+
+/*PORTFOLIO*/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 120px;
+    margin: 80px;
+}
+
+.img1 {
+    width: 250px;
+    height: 250px;
+}
+
+
+
+
