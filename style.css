@@ -4,13 +4,7 @@
   font-family: 'Futura Medium';
 }
 
-/*nav*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
+/*NAVBAR*/
 
 ul {
   position: -webkit-sticky; /* Safari */
@@ -18,85 +12,40 @@ ul {
   top: 0;
 }
 
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: pink;
-  text-align: center;
-  padding: 20px 20px;
-  text-decoration: none;
-  font-family: sans-serif;
-}
-
-/* Color on hover */
-li a:hover {
-  background-color: white;
-}
-
 /*Responsive nav*/
-
-ul.sidenav {
+ul.topnav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 25%;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+  overflow: hidden;
+  background-color: #222;
+font-family: sans-serif;
 }
 
-ul.sidenav li a {
+ul.topnav li {float: left;}
+
+ul.topnav li a {
   display: block;
-  color: #000;
-  padding: 8px 16px;
+  color: ghostwhite;
+  text-align: center;
+  padding: 20px 30px;
   text-decoration: none;
 }
 
-ul.sidenav li a.active {
-  background-color: #4CAF50;
-  color: white;
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li.right {float: right;}
+
+/*Small screens - mobile*/
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {float: none;}
 }
 
-ul.sidenav li a:hover:not(.active) {
-  background-color: #555;
-  color: white;
-}
-
-div.content {
-  margin-left: 25%;
-  padding: 1px 16px;
-  height: 1000px;
-}
-
-@media screen and (max-width: 900px) {
-  ul.sidenav {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-
-  ul.sidenav li a {
-    float: left;
-    padding: 15px;
-  }
-
-  div.content {margin-left: 0;}
-}
-
-@media screen and (max-width: 400px) {
-  ul.sidenav li a {
-    text-align: center;
-    float: none;
-  }
-}
 
 /* index */
 body {
-  background-color: #111;
+  background-color: ghostwhite;
   margin: 0;
 }
 
