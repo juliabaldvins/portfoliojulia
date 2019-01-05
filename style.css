@@ -50,7 +50,7 @@ body {
   font-family: "Lato", sans-serif;
 }
 
-/* SVG?
+
 svg{
     width: 800px;
     fill: none;
@@ -67,7 +67,7 @@ svg{
     }
 }
 
-div{
+#svgname{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,7 +75,7 @@ div{
   text-align: center;
   min-height: 100vh;
 }
-*/
+
 
 /*ABOUT*/
 
