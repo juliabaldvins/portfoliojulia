@@ -1,0 +1,26 @@
+ *{box-sizing: border-box;}
+        body{ background-color: white;}
+
+div{
+    margin-top: 20%;
+    margin-left: 30%;
+}
+
+#witch{
+    width: 150px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#witch img{
+    animation: walk 2s steps(6)reverse infinite;
+}
+
+@keyframes walk{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-1200px);
+    }
+}
